@@ -20,7 +20,7 @@
 
   system.stateVersion = "23.11";
   networking.networkmanager.enable = true;
-  time.timeZone = "Europe/Helsinki";
+  time.timeZone = "Europe/Warsaw";
   i18n.defaultLocale = "en_US.UTF-8";
   services.printing.enable = true;
 
