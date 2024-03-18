@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  userConfig,
   ...
 }: {
   programs.zsh = {
@@ -11,10 +12,14 @@
     history = {
       size = 10000;
     };
+    shellAliases = {
+      sail = "[ -f sail ] && sh sail || sh vendor/bin/sail";
+    };
     oh-my-zsh = {
       enable = true;
       plugins = ["git" "z"];
       theme = "robbyrussell";
     };
   };
+  home.sessionPath = ["/home/${userConfig.userName}/.config/composer/vendor/bin"];
 }

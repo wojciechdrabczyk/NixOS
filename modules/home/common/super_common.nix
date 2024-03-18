@@ -45,10 +45,14 @@
 
     # productivity
     glow # markdown previewer in terminal
-
     btop # replacement of htop/nmon
     iotop # io monitoring
     iftop # network monitoring
+
+    # programming
+    exercism
+    php
+    php82Packages.composer
 
     # system call monitoring
     strace # system call monitoring

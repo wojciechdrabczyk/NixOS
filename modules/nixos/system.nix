@@ -46,11 +46,10 @@
     isNormalUser = true;
     description = userConfig.fullName;
     shell = pkgs.zsh;
-    extraGroups = ["networkmanager" "wheel"];
+    extraGroups = ["networkmanager" "wheel" "docker"];
     packages = with pkgs; [
       firefox
       kate
-      #  thunderbird
     ];
   };
 
@@ -65,6 +64,8 @@
     LC_TELEPHONE = "pl_PL.UTF-8";
     LC_TIME = "pl_PL.UTF-8";
   };
+
+  virtualisation.docker.enable = true;
 
   nixpkgs.config.allowUnfree = true;
   nix = {

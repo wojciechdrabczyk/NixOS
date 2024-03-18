@@ -34,6 +34,9 @@
     xkbVariant = "";
   };
 
+  #Enable Copy&Paste VM
+  virtualisation.vmware.guest.enable = true;
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
